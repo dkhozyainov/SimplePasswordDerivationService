@@ -3,7 +3,7 @@ package com.encrypt.demo.exception;
 import org.springframework.lang.NonNull;
 
 /**
- * EncryptionException is a custom exception class that extends RuntimeException.
+ * EncryptException is a custom exception class that extends RuntimeException.
  * It is used when encryption error occurs.
  */
 public class EncryptException extends RuntimeException {

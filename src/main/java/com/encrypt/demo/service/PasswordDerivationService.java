@@ -20,7 +20,7 @@ import java.security.spec.KeySpec;
 import java.util.Base64;
 
 /**
- * Service class for handlingPBKDF2 (Password-Based Key Derivation Function 2) and HmacSHA256 (Hash-based Message
+ * PasswordDerivationService for handlingPBKDF2 (Password-Based Key Derivation Function 2) and HmacSHA256 (Hash-based Message
  * Authentication Code using the SHA-256 hashing algorithm)
  */
 public class PasswordDerivationService {
@@ -84,9 +84,9 @@ public class PasswordDerivationService {
     }
 
     /**
-     * Validate secretKey & salt length
+     * Validate masterPassword & salt length
      *
-     * @param masterPassword String value of secret key
+     * @param masterPassword String value of masterPassword
      * @param salt      String value of salt
      */
     protected void validateSaltAndMasterPassword(@NonNull String masterPassword, @NonNull String salt) {
